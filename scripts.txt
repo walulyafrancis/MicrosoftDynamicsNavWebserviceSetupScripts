@@ -1,0 +1,7 @@
+script:
+Set-ExecutionPolicy Unrestricted -Force
+Import-Module C:\scripts\GenerateSSCertificate.ps1
+New-SelfSignedCertificateEx –Subject "CN=KaribuHotel" –IsCA $true –Exportable –StoreLocation LocalMachine
+
+path:                        
+C:\Users\Administrator\AppData\Roaming\Microsoft\Microsoft Dynamics NAV\100
